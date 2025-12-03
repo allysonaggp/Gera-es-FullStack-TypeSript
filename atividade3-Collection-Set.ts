@@ -34,29 +34,13 @@ const setNumeros: Set<number> = new Set<number>
 let pergunta: number
 
 // Entrada de dados
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-pergunta = read.questionInt("Digite um numero: ")
-setNumeros.add(pergunta)
-
+for (let i = 0; i < 10; i++) {
+    pergunta = read.questionInt("Digite um numero: ")
+    setNumeros.add(pergunta)
+}
 // Loop com Impressao de dados no Terminal
-console.log("/n---------------------------------------------");
+console.log(`\n---------------------------------------------
+Listar dados do Set`);
 for (let numero of setNumeros) {
     console.log(numero);
 }
